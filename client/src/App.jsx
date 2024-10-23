@@ -1,5 +1,11 @@
+import TransactionList from "./components/TransactionList";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <TransactionList />
+    </>
+  );
 }
 
 export default App;
