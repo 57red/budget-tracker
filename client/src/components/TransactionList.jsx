@@ -5,6 +5,7 @@ import axios from "axios";
 import BalanceSheet from "./BalanceSheet";
 import TransactionForm from "./TransactionForm";
 import Button from "./Button";
+import EditTransaction from "./EditTransaction";
 
 function TransactionList() {
   const [transactions, setTransactions] = useState([]);
@@ -62,10 +63,7 @@ function TransactionList() {
               <span className="badge bg-secondary rounded-pill me-3">
                 {formatDate(transaction.date)}
               </span>
-              <Button
-                text="Edit"
-                className="btn btn-outline-warning btn-sm me-2"
-              />
+              <EditTransaction transaction={transaction} />
               <Button
                 text="Delete"
                 className="btn btn-outline-danger btn-sm"

@@ -5,7 +5,7 @@ function BalanceSheet() {
         <div className="row">
           <div className="col-md-4">
             <div className="card text-primary bg-primary-subtle mb-3">
-              <div className="card-header">Balance</div>
+              <div className="card-header">Savings</div>
               <div className="card-body">
                 <h5 className="card-title">${5000}</h5>
               </div>
